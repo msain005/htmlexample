@@ -1,0 +1,107 @@
+<!--a href='website uml' then after u can write the words-->
+<!--this is index.html-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<!--=========================================================================-->
+<!--creates text on the website-->
+<h1>Hello World</h1>
+<p>this is my first html page</p>
+<h3>This is the header 3</h3>
+<h6>This is the header 6</h6>
+<!--=========================================================================-->
+
+<!--=========================================================================-->
+<!--ul is for bulllet points-->
+<ul>
+<li>Coffee</li>
+<li>Tea</li>
+<li class='milkClass'>Milk</li>
+<li>Water</li>
+</ul>
+<!--=========================================================================-->
+
+<!--=========================================================================-->
+<!-- ol is for numbers-->
+<ol>
+<li>Coffee</li>
+<li>Tea</li>
+<li class='milkClass'>Milk</li>
+<li id='waterID'>Water</li>
+</ol>
+<!--=========================================================================-->
+
+<!--=========================================================================-->
+<!--a href makes the text clickable and calls a website -->
+<a href='http://www.google.com'>This is a link to google</a>
+<!--=========================================================================-->
+<!--img changing width, changes height, then src gets the picture -->
+<img width='650px' height='650px' src ='http://ihavecat.com/wp-content/uploads/2014/01/cat-asking-for-help-2.jpg'>
+<!--=========================================================================-->
+
+<!--=========================================================================-->
+<!--creates button functions-->
+<button onclick='alertfunc()'>click me ;)</button>
+<button onclick='changeColor()'>change color</button>
+<!--=========================================================================-->
+
+<!--=========================================================================-->
+<!--alertfunc calls button functions with a popup-->
+<!--changeColor calls button to change color of water text-->
+<script>
+var alertfunc = function()
+{
+    alert('THIS IS A VIRUS');
+}
+
+var changeColor= function()
+{
+    document.getElementById('waterID').style.color='silver'
+}
+</script>
+<!--=========================================================================-->
+
+<!--=========================================================================-->
+<!--style changes all the colors, fontsize, borders  -->
+<style>
+
+h1
+{
+    color:purple;
+    font-size:50px;
+    margin:30px;
+}
+
+p
+{
+    color:green;
+    font-size:30px;
+    border: 2px solid purple;
+    padding:20px;
+    margin:30px;
+    background-color:#ffe6cc;
+}
+
+
+li
+{
+    background-color:#ffe6cc;
+}
+
+#waterID
+{
+    background-color:#ccffff;
+}
+
+.milkClass
+{
+    border: 1px solid black;
+    background-color:white;
+}
+
+</style>
+<!--=========================================================================-->
+
+<body>
+</html>
